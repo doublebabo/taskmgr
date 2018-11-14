@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .as-flex{
+      display: flex;
+      width: 240px;
+    }
+    .item-1{
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .flex-basis-100{
+      flex-basis: auto;
+    }
+    .flex-basis-200{
+      flex-basis: 200px;
+    }
+    .pink{
+      background: pink;
+    }
+    .lightblue{
+      background: lightblue;
+    }
+    .lightgray{
+      background: lightgray
+    }
+  </style>
 </head>
 <body>
-$END$
+<div class="as-flex">
+  <div class="item-1 pink flex-basis-100">
+    <span>1 2 3 4 5 6 7 8 9</span>
+  </div>
+  <div class="item-1 lightblue flex-basis-100">
+    <span>1 2 3 4 5 6 7 8 9 1 2 3 4 5</span>
+  </div>
+  <div class="item-1 lightgray flex-basis-100">
+    <span>1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9</span>
+  </div>
+</div>
 </body>
 </html>

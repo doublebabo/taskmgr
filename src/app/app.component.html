@@ -1,10 +1,18 @@
-<div>
-  <header>
-    <app-header></app-header>
-  </header>
-  <main>
-  </main>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</div>
+<mat-sidenav-container [class.my-dark-theme]="dark">
+  <mat-sidenav #sidenav mode='side'>
+    <app-sidebar></app-sidebar>
+   </mat-sidenav>
+  <div class="site">
+    <header>
+      <app-header (toggle)='sidenav.toggle()' (toggleTheme)="switch($event)"></app-header>
+    </header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+ </mat-sidenav-container>
+
+
