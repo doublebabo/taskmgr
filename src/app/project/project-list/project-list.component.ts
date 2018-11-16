@@ -29,13 +29,13 @@ export class ProjectListComponent implements OnInit {
   }
 
   openNewProjectDialog() {
-    const dialogRef = this.dialog.open(NewProjectComponent , {data: {dark: true}});
+    const dialogRef = this.dialog.open(NewProjectComponent);
     dialogRef.afterClosed().subscribe(data => {
       console.log(data);    });
   }
 
   lanuchInviteDialog() {
-    const dialogRef = this.dialog.open(InviteComponent , {data: {dark: true}});
+    const dialogRef = this.dialog.open(InviteComponent);
     dialogRef.afterClosed().subscribe(data => {
       console.log(data);    });
   }

@@ -1,0 +1,13 @@
+<mat-list-item>
+  <mat-checkbox [checked]=""></mat-checkbox>
+  <div mat-line="" class="content">
+     <span [matTooltip]="item.desc">{{item.desc}}</span>
+  </div>
+  <div mat-line class="bottom_bar">
+    <span class="due_date" *ngIf="item.dueDate">
+      {{item.dueDate | date: 'yyyy-MM-dd'}}
+    </span>
+    <mat-icon *ngIf="item.reminder">alarm</mat-icon>
+  </div>
+  <mat-icon svgIcon=""></mat-icon>
+</mat-list-item>

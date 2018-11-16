@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: 'path', component: AppComponent
   },
-  { path: 'project', redirectTo: '/project', pathMatch: 'full'}
+  { path: 'project', redirectTo: '/project', pathMatch: 'full'},
+  { path: 'tasklists', redirectTo: '/tasklists', pathMatch: 'full'}
 ];
 
 @NgModule({

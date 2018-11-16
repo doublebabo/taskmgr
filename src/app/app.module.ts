@@ -6,6 +6,7 @@ import { CoreModule } from './core/core.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {ProjectModule} from './project/project.module';
+import {TaskModule} from './task/task.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ProjectModule} from './project/project.module';
     MatSidenavModule,
     CoreModule,
     AppRoutingModule,
-    ProjectModule
+    ProjectModule,
+    TaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

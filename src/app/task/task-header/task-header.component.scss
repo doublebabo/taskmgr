@@ -1,0 +1,8 @@
+.taskheader {
+  display: flex;
+  flex-direction: row;
+  div {
+    text-align: center;
+    flex: 1 0 20px;
+  }
+}
